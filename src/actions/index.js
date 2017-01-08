@@ -3,12 +3,15 @@ export function selectBook(book) {
 	// an object with a type property
 	// Action typically has at least two properties: type and payload
 	// the type is always uppercase and separated by underscores if multiple words
-	// return {
-	// 	type: 'BOOK_SELECTED',
-	// 	payload: book
-	// };
+	// type can be a variable
+	return {
+		type: 'BOOK_SELECTED',
+		payload: book
+	};
 
-	console.log('a book has been selected: ', book.title)
+	// removed in L46
+	// console.log('a book has been selected: ', book.title)
+
 }
 
 /*

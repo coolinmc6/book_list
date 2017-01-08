@@ -8,6 +8,7 @@ class BookList extends Component {
 	renderList() {
 		return this.props.books.map((book) => {
 			return (
+				// L46 he spaces it out and adds the click event handler
 				<li 
 					key={book.title} 
 					onClick={() => this.props.selectBook(book)}
@@ -45,7 +46,7 @@ function mapDispatchToProps(dispatch) {
 
 	// L45 - the purpose of bindActionCreators and dispatch is specifically to take what gets
 	// returned from selectBook and make sure it flows through the reducers
-	
+
 }
 
 // Promote BookList from a component to a container - it needs to know
